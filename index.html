@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <title>Portal de Utilidades</title>
+</head>
+<body>
+    <header>
+        <h1>Portal de Utilidades</h1>
+        <nav>
+            <ul>
+                <li><a href="#verificadorNumero" class="link_abas">Verificador de Número</a></li>
+                <li><a href="#tabuada" class="link_abas">Tabuada</a></li>
+                <li><a href="#IMC" class="link_abas">IMC</a></li>
+                <li><a href="#mediaDeNotas" class="link_abas">Médias de Notas</a></li>
+                <li><a href="#combustivel" class="link_abas">Combustível mais vantajoso</a></li>
+                <li><a href="#dado" class="link_abas">Jogo do Dado</a></li>
+                <li><a href="#cadastro" class="link_abas">Cadastro</a></li>
+                <li><a href="#analiseVetores" class="link_abas">Análise de Vetores</a></li>
+                <li><a href="#cadastroPessoas" class="link_abas">Cadastro de Pessoas (Em vetores)</a></li>
+                <li><a href="#fibonacci" class="link_abas">Sequência de Fibonacci</a></li>
+                <li><a href="#primos" class="link_abas">Numeros Primos</a></li>
+                <li><a href="#numpmes" class="link_abas">Mês por Número</a></li>
+                <li><a href="#data" class="link_abas">Data por Extenso</a></li>
+                <li><a href="#cliques" class="link_abas">Contador de Cliques</a></li>
+                <li><a href="#toDoList" class="link_abas">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="verificadorNumero" class="abas esconder">
+            <h2>Verificador de Número</h2>
+            <p>Esse programa verifica se o número é positivo, negativo ou zero.</p>
+            <input type="number" id="numeroParaVerificar" placeholder="Digite um número">
+            <button id="verificarNumero">Verificar</button>
+            <p id="resultado" class="esconder paragrafo_div"></p>
+        </div>
+
+        <div id="tabuada" class="abas esconder">
+            <h2>Tabuada</h2>
+            <p>Esse programa gera a tabuada de um número.</p>
+            <input type="number" id="numeroParaTabuada" placeholder="Digite um número">
+            <button id="gerarTabuada">Gerar Tabuada</button>
+            <ul id="resultadoTabuada" class="esconder"></ul>
+        </div>
+
+        <div id="IMC" class="abas esconder IMC_div">
+            <h2>IMC</h2>
+            <p>Esse programa calcula o IMC de uma pessoa.</p>
+            <input type="number" id="peso" placeholder="Digite seu peso (kg)">
+            <input type="number" id="altura" placeholder="Digite sua altura (m)">
+            <button id="calcularIMC">Calcular IMC</button>
+            <p id="resultadoIMC" class="esconder paragrafo_div"></p>
+
+            <table class="tabelaIMC">    
+                <thead>
+                    <tr>
+                        <th>Calculo IMC</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abaixo de 18,5</td>
+                        <td>Você está abaixo do peso ideal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Parabéns - Você está em seu peso normal!</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25,0 e 29,9</td>
+                        <td>Você está acima de seu peso (sobrepeso)</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30,0 e 34,9</td>
+                        <td>Obesidade grau I</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35,0 e 39,9</td>
+                        <td>Obesidade grau II</td>
+                    </tr>
+                    <tr>
+                        <td>40,0 e acima</td>
+                        <td>Obesidade grau III</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>  
+
+        <div id="mediaDeNotas" class="abas esconder">
+            <h2>Média de Notas</h2>
+            <p>Esse programa calcula a média de notas de um aluno.</p>
+            <input type="number" id="nota1" placeholder="Digite a primeira nota">
+            <input type="number" id="nota2" placeholder="Digite a segunda nota">
+            <input type="number" id="nota3" placeholder="Digite a terceira nota">
+            <button id="calcularMedia">Calcular Média</button>
+            <p id="resultadoMedia" class="esconder paragrafo_div"></p>
+        </div>
+
+        <div id="combustivel" class="abas esconder">
+            <h2>Combustível mais vantajoso</h2>
+            <p>Esse programa calcula o combustível mais vantajoso entre álcool e gasolina.</p>
+            <input type="number" id="precoAlcool" placeholder="Preço do álcool (R$)">
+            <input type="number" id="precoGasolina" placeholder="Preço da gasolina (R$)">
+            <button id="calcularCombustivel">Calcular</button>
+            <p id="resultadoCombustivel" class="esconder paragrafo_div"></p>
+        </div>
+
+        <div id="dado" class="abas esconder"></div>
+
+        <div id="cadastro" class="abas esconder"></div>
+
+        <div id="analiseVetores" class="abas esconder"></div>
+
+        <div id="cadastroPessoas" class="abas esconder"></div>
+
+        <div id="fibonacci" class="abas esconder"></div>
+
+        <div id="primos" class="abas esconder"></div>
+
+        <div id="numpmes" class="abas esconder"></div>
+
+        <div id="data" class="abas esconder"></div>
+
+        <div id="cliques" class="abas esconder"></div>
+
+        <div id="toDoList" class="abas esconder"></div>
+    </main>
+    <script src="./JS/scripts.js"></script>
+</body>
+</html>
