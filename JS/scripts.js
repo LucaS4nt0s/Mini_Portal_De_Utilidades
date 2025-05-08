@@ -137,6 +137,83 @@ botaoMedia.addEventListener("click", (media) => {
 
 //Exercicio 5 - Criar uma função que retorna o combustivel mais econômico entre álcool e gasolina
 
+const inputAlcool = document.querySelector("#precoAlcool");
+const inputGasolina = document.querySelector("#precoGasolina");
+const botaoCombustivel = document.querySelector("#calcularCombustivel");   
+const paragrafoCombustivel = document.querySelector("#resultadoCombustivel");
+
+paragrafoCombustivel.innerHTML = "<img src='./Assets/imgs/imagens/neutro.png' alt='Neutro'>";
+
+botaoCombustivel.addEventListener("click", (calcularCombustivelViavel) => {
+    const precoAlcool = Number(inputAlcool.value);
+    const precoGasolina = Number(inputGasolina.value);
+    
+    if(precoAlcool <= 0 || precoGasolina <= 0){
+        alert("Por favor, insira preços válidos.");
+        return;
+    }
+    const calcularPorcentagem = () => {
+        if (precoAlcool / precoGasolina <= 0.7) {
+            paragrafoCombustivel.innerHTML = "<img src='./Assets/imgs/imagens/etanol.png' alt='Etanol'> <br> <p>Etanol é o combustível mais econômico!</p>";
+        }
+        else {
+            paragrafoCombustivel.innerHTML = "<img src='./Assets/imgs/imagens/gasolina.png' alt='Gasolina'> <br> <p>Gasolina é o combustível mais econômico!</p>";
+        }
+    }
+    calcularPorcentagem();
+});
+
+// Exercicio 6 - Exibir uma face aleatoria do dado quando reiniciar a pagina
+const dado = document.querySelector("#resultadoDado");
+const linkDado = document.querySelector(".link_abas:nth-child(6)");
+
+// Adicionando o evento DOMContentLoaded para garantir que o dado seja exibido após o carregamento da página
+document.addEventListener("DOMContentLoaded", function() {
+    var sorteio = Math.floor(Math.random() * 6 + 1);
+    switch (sorteio) {
+        case 1:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face1.png' alt='Dado'>`;
+            break;
+        case 2:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face2.png' alt='Dado'>`;
+            break;
+        case 3:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face3.png' alt='Dado'>`;
+            break;
+        case 4:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face4.png' alt='Dado'>`;
+            break;
+        case 5:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face5.png' alt='Dado'>`;
+            break;
+        case 6:
+            dado.innerHTML = `<img src='./Assets/dado/dado/face6.png' alt='Dado'>`;
+            break;
+    }
+});
+
+// Exercicio 7 - Cadastrar um usuário e exibir os dados cadastrados em uma tabela
+
+const botaoCadastrar = document.querySelector("#cadastrar");
+const inputNome = document.querySelector("#nome");
+const inputEmail = document.querySelector("#email");
+const inputTelefone = document.querySelector("#telefone");
+const paragrafoCadastro = document.querySelector("#resultadoCadastro");
+
+botaoCadastrar.addEventListener("click", (cadastrar) => {
+    cadastrar.preventDefault();
+    const nome = inputNome.value;
+    const email = inputEmail.value;
+    const telefone = inputTelefone.value;
+
+    if(nome === "" || email === "" || telefone === ""){
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+
+    paragrafoCadastro.innerHTML = `<p>Nome: ${nome}</p><br><p>Email: ${email}</p><br><p>Telefone: ${telefone}</p>`;
+});
+
 // - Fibonacci - Criar uma função que retorna os 150 primeiros números da sequência de Fibonacci
 const fibonnacci = maxValor => {
     let num1 = 0;
