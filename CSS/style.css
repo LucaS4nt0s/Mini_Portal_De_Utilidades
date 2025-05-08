@@ -1,7 +1,10 @@
 :root{
     --primary-color: #4B8E4D;
     --light-gray: #D1D1D1;
+    --dark-gray: #4B4B4B;
     --light-white: #FAF3E0;
+    --primary-red: #FF4B4B;
+    --ligth-red: #f58181;
     --font-family: "Baskervville", serif;
 }
 
@@ -204,4 +207,54 @@ a:hover{
 
 #resultadoIMC{
     padding-bottom: 0;
+}
+
+.cadastroDasPessoas{
+    border-bottom: 1px solid var(--light-gray);
+    padding: 15px 10px;
+}
+
+#contarCliques{
+    margin-bottom: 10px;
+}
+
+.listaDeTarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.liTarefas{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 30px !important;
+    cursor: pointer !important;
+    padding: 10px 0 !important;
+}
+
+.removerTarefa{
+    background-color: var(--primary-red) !important;
+    color: var(--light-white) !important;
+    padding: 5px 10px !important;
+    width: 35px !important;
+    height: 35px !important;
+    border: none !important;
+    border-radius: 5px;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.removerTarefa:hover{
+    background-color: var(--ligth-red) !important;
+    color: var(--dark-gray) !important;
+    transition: all 0.3s ease;
 }

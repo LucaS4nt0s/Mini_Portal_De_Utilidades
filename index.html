@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Portal de Utilidades</title>
 </head>
 <body>
@@ -128,21 +129,141 @@
             <p id="resultadoCadastro" class="esconder paragrafo_div"></p>
         </div>
 
-        <div id="analiseVetores" class="abas esconder"></div>
+        <div id="analiseVetores" class="abas esconder">
+            <h2>Análise de Vetores</h2>
+            <p>Esse programa analisa um vetor de 10 números.</p>
+            <input type="number" id="numero1" placeholder="Digite o primeiro número">
+            <input type="number" id="numero2" placeholder="Digite o segundo número">
+            <input type="number" id="numero3" placeholder="Digite o terceiro número">
+            <input type="number" id="numero4" placeholder="Digite o quarto número">
+            <input type="number" id="numero5" placeholder="Digite o quinto número">
+            <input type="number" id="numero6" placeholder="Digite o sexto número">
+            <input type="number" id="numero7" placeholder="Digite o sétimo número">
+            <input type="number" id="numero8" placeholder="Digite o oitavo número">
+            <input type="number" id="numero9" placeholder="Digite o nono número">
+            <input type="number" id="numero10" placeholder="Digite o décimo número">
+            <button id="analisarVetores">Analisar Vetor</button>
+            <p id="resultadoAnalise" class="esconder paragrafo_div"></p>
+            <p id="resultadoAnalise2" class="esconder paragrafo_div"></p>
+            <p id="resultadoAnalise3" class="esconder paragrafo_div"></p>
+            <p id="resultadoAnalise4" class="esconder paragrafo_div"></p>
+            <p id="resultadoAnalise5" class="esconder paragrafo_div"></p>
+        </div>
 
-        <div id="cadastroPessoas" class="abas esconder"></div>
+        <div id="cadastroPessoas" class="abas esconder">
+            <h2>Cadastro de Pessoas (Em vetores)</h2>
+            <p>Esse programa cadastra 10 pessoas e exibe os dados.</p>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa1" class="nome" placeholder="Digite o nome da pessoa 1">
+                <input type="text" id="cidadePessoa1" class="cidade" placeholder="Digite a cidade da pessoa 1">
+                <input type="number" id="idadePessoa1" class="idade" placeholder="Digite a idade da pessoa 1">
+                <input type="text" id="sexoPessoa1" class="sexo" placeholder="Digite o sexo da pessoa 1 (M/F/O)">
+            </div>  
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa2" class="nome" placeholder="Digite o nome da pessoa 2">
+                <input type="text" id="cidadePessoa2" class="cidade" placeholder="Digite a cidade da pessoa 2">
+                <input type="number" id="idadePessoa2" class="idade" placeholder="Digite a idade da pessoa 2">
+                <input type="text" id="sexoPessoa2" class="sexo" placeholder="Digite o sexo da pessoa 2 (M/F/O)">
+            </div>  
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa3" class="nome" placeholder="Digite o nome da pessoa 3">
+                <input type="text" id="cidadePessoa3" class="cidade" placeholder="Digite a cidade da pessoa 3">
+                <input type="number" id="idadePessoa3" class="idade" placeholder="Digite a idade da pessoa 3">
+                <input type="text" id="sexoPessoa3" class="sexo" placeholder="Digite o sexo da pessoa 3 (M/F/O)">
+            </div>
+    
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa4" class="nome" placeholder="Digite o nome da pessoa 4">
+                <input type="text" id="cidadePessoa4" class="cidade" placeholder="Digite a cidade da pessoa 4">
+                <input type="number" id="idadePessoa4" class="idade" placeholder="Digite a idade da pessoa 4">
+                <input type="text" id="sexoPessoa4" class="sexo" placeholder="Digite o sexo da pessoa 4 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa5" class="nome" placeholder="Digite o nome da pessoa 5">
+                <input type="text" id="cidadePessoa5" class="cidade" placeholder="Digite a cidade da pessoa 5">
+                <input type="number" id="idadePessoa5" class="idade" placeholder="Digite a idade da pessoa 5">
+                <input type="text" id="sexoPessoa5" class="sexo" placeholder="Digite o sexo da pessoa 5 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa6" class="nome" placeholder="Digite o nome da pessoa 6">
+                <input type="text" id="cidadePessoa6" class="cidade" placeholder="Digite a cidade da pessoa 6">
+                <input type="number" id="idadePessoa6" class="idade" placeholder="Digite a idade da pessoa 6">
+                <input type="text" id="sexoPessoa6" class="sexo" placeholder="Digite o sexo da pessoa 6 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa7" class="nome" placeholder="Digite o nome da pessoa 7">
+                <input type="text" id="cidadePessoa7" class="cidade" placeholder="Digite a cidade da pessoa 7">
+                <input type="number" id="idadePessoa7" class="idade" placeholder="Digite a idade da pessoa 7">
+                <input type="text" id="sexoPessoa7" class="sexo" placeholder="Digite o sexo da pessoa 7 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa8" class="nome" placeholder="Digite o nome da pessoa 8">
+                <input type="text" id="cidadePessoa8" class="cidade" placeholder="Digite a cidade da pessoa 8">
+                <input type="number" id="idadePessoa8" class="idade" placeholder="Digite a idade da pessoa 8">
+                <input type="text" id="sexoPessoa8" class="sexo" placeholder="Digite o sexo da pessoa 8 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa9" class="nome" placeholder="Digite o nome da pessoa 9">
+                <input type="text" id="cidadePessoa9" class="cidade" placeholder="Digite a cidade da pessoa 9">
+                <input type="number" id="idadePessoa9" class="idade" placeholder="Digite a idade da pessoa 9">
+                <input type="text" id="sexoPessoa9" class="sexo" placeholder="Digite o sexo da pessoa 9 (M/F/O)">
+            </div>
+            <div class="cadastroDasPessoas">
+                <input type="text" id="nomePessoa10" class="nome" placeholder="Digite o nome da pessoa 10">
+                <input type="text" id="cidadePessoa10" class="cidade" placeholder="Digite a cidade da pessoa 10">
+                <input type="number" id="idadePessoa10" class="idade" placeholder="Digite a idade da pessoa 10">
+                <input type="text" id="sexoPessoa10" class="sexo" placeholder="Digite o sexo da pessoa 10 (M/F/O)">
+            </div>
+            <button id="cadastrarPessoas">Cadastrar</button>
+            <div id="resultadoCadastroPessoas" class="esconder paragrafo_div"></div>
+        </div>
 
-        <div id="fibonacci" class="abas esconder"></div>
+        <div id="fibonacci" class="abas esconder">
+            <h2>Sequência de Fibonacci</h2>
+            <p>Esse programa gera a sequência de Fibonacci (150 primeiros termos)</p>
+            <button id="gerarFibonacci">Gerar Fibonacci</button>
+            <div id="resultadoFibonacci" class="esconder"></div>
+        </div>
 
-        <div id="primos" class="abas esconder"></div>
+        <div id="primos" class="abas esconder">
+            <h2>Números Primos</h2>
+            <p>Esse programa verifica se um número é primo.</p>
+            <input type="number" id="numeroPrimo" placeholder="Digite um número">
+            <button id="verificarPrimo">Verificar</button>
+            <p id="resultadoPrimo" class="esconder paragrafo_div"></p>
+        </div>
 
-        <div id="numpmes" class="abas esconder"></div>
+        <div id="numpmes" class="abas esconder">
+            <h2>Mês por Número</h2>
+            <p>Esse programa converte um número em mês.</p>
+            <input type="number" id="numeroMes" placeholder="Digite um número de 1 a 12">
+            <button id="converterMes">Converter</button>
+            <p id="resultadoMes" class="esconder paragrafo_div"></p>
+        </div>
 
-        <div id="data" class="abas esconder"></div>
+        <div id="data" class="abas esconder">
+            <h2>Data por Extenso</h2>
+            <p>Esse programa converte uma data em formato Mês/Dia/Ano para extenso.</p>
+            <input type="date" id="dataExtenso">
+            <button id="converterData">Converter</button>
+            <p id="resultadoData" class="esconder paragrafo_div"></p>
+        </div>
 
-        <div id="cliques" class="abas esconder"></div>
+        <div id="cliques" class="abas esconder">
+            <h2>Contador de Cliques</h2>
+            <p>Esse programa conta quantas vezes você clicou no botão.</p>
+            <button id="contarCliques">Clique aqui</button>
+            <button id="reiniciarCliques">Resetar</button>
+            <p id="resultadoCliques" class="paragrafo_div">Você clicou 0 vezes</p>
+        </div>
 
-        <div id="toDoList" class="abas esconder"></div>
+        <div id="toDoList" class="abas esconder">
+            <h2>To-Do List</h2>
+            <p>Esse programa cria uma lista de tarefas.</p>
+            <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+            <button id="adicionarTarefa">Adicionar Tarefa</button>
+            <ul id="listaDeTarefas"></ul>
+        </div>
     </main>
     <script src="./JS/scripts.js"></script>
 </body>
